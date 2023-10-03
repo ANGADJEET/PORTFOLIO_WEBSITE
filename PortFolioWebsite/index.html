@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="desktop-nav">
+        <div class="logo">
+            Angadjeet Singh
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">
+            Angadjeet Singh
+        </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <ul> <!-- Added an unordered list container -->
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="./assets/pic3.jpeg" alt="Angad profile picture">
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1">Hello, I'm</p>
+            <h1 class="title">Angad</h1>
+            <p class="section_text_p2">Software Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button> <!-- Fixed the onclick value -->
+            </div>
+            <div id = "socials-conatiner">
+                <img src="./assets/linkedin.png" alt="My Linkedin profile"
+                class = "icon" onclick="loaction.href = 'linkedin.com/in/angadjeet-singh-55a59b257/'"/>
+                <img src="./assets/github.png" alt="My Github profile"
+                class = "icon" onclick="loaction.href = 'https://github.com/ANGADJEET'">
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="scrollToSection('#Experience')">    </section>
+    <section id = "about">
+        <p class="section_text_p1">Get To Know More</p>
+        <h1 class = "title">About Me</h1>
+        <div class = "section-container">
+            <div class ="section_pic-container">
+                <img src="./assets/pic2.jpeg" alt="Profile picture"
+                class = "about-pic"/>
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon"
+                        class = "icon">
+                        <h3>Experience</h3>
+                        <p>2+ years <br>Software Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon"
+                        class = "icon">
+                        <h3>Education</h3>
+                        <p>Pursuing B-Tech Bachelors Degree in Computer Science</p>
+                        <p>Anticipated Graduation<br>November 2026</p>
+                    </div>
+                </div>
+                <div class = "text-container">
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore necessitatibus sit dicta quam commodi deleniti quia blanditiis laboriosam veniam labore? Assumenda in eveniet nihil deserunt error nemo illum reiciendis excepturi!
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="scrollToSection('#projects')">
+
+    </section>
+    <section id="Experience">
+        <p class="section_text_p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container1">
+    
+            <!-- Web Development Skills -->
+            <div class="details-containers">
+                <h2 class="experience-sub-title">Web Development Skills</h2>
+                <div class="article-container">
+                    <!-- High Priority -->
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                        <div>
+                            <h3>HTML</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                        <div>
+                            <h3>CSS</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <!-- Intermediate Priority -->
+                    <!-- More frontend experience entries here -->
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                        <div>
+                            <h3>JavaScript</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                        <div>
+                            <h3>Node JS</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                        <div>
+                            <h3>Figma</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    <!-- Low Priority -->
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                        <div>
+                            <h3>Python && Streamlit</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                        <div>
+                            <h3>Git</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+    
+            <!-- Android Development -->
+            <div class="details-containers">
+                <h2 class="experience-sub-title">Android Development</h2>
+                <div class="article-container">
+                    <!-- High Priority -->
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                        <div>
+                            <h3>Java</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <!-- Intermediate Priority -->
+                    <!-- More backend experience entries here -->
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                        <div>
+                            <h3>Android Studio</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+    
+            <!-- Machine Learning -->
+            <div class="details-containers">
+                <h2 class="experience-sub-title">Machine Learning</h2>
+                <div class="article-container">
+                    <!-- Intermediate Priority -->
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                        <div>
+                            <h3>Pandas & Numpy</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <!-- Low Priority -->
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                        <div>
+                            <h3>Scikit Learn</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    <!-- More backend experience entries here -->
+                </div>
+            </div>
+    
+            <!-- Other Experiences -->
+            <div class="details-containers">
+                <h2 class="experience-sub-title">Other Experiences</h2>
+                <div class="article-container">
+                    <!-- High Priority -->
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                        <div>
+                            <h3>C</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                        <div>
+                            <h3>C++</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                        <div>
+                            <h3>Python</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <!-- Intermediate Priority -->
+                    <!-- More backend experience entries here -->
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                        <div>
+                            <h3>Linux</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                        <div>
+                            <h3>Shell-scripting & MakeFiles</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <!-- Low Priority -->
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                        <div>
+                            <h3>Algorithmic Thinking</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="scrollToSection('#projects')">
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects">
+
+        <p class="section_text_p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <!-- Project One -->
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-1.png" alt="Project 1" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Project One</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ANGADJEET/'">Github</button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ANGADJEET/'">Live Demo</button>
+                </div>
+            </div>
+
+            <!-- Project Two -->
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-2.png" alt="Project 2" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Project Two</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ANGADJEET/'">Github</button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ANGADJEET/'">Live Demo</button>
+                </div>
+            </div>
+
+            <!-- Project Three -->
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-3.png" alt="Project 3" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Project Three</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ANGADJEET/'">Github</button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ANGADJEET/'">Live Demo</button>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+    </section>
+    <section id ="contact">
+        <p class="section_text_p1">Get in Touch</p>
+        <h1 class = "title">Contact Me</h1>
+        <div class="contact-info-upper-container"> 
+            <div class = "contact-info-container">
+                <img src="./assets/email.png" alt="Email icon"
+                class="icon contact-icon email-icon">
+                <p><a href="mailto:example@gmail.com">angadjeet22071@iiitd.ac.in</a></p>
+            </div>
+            <div class = "contact-info-container">
+                <img src="./assets/linkedin.png" alt="Linkedin icon"
+                class="icon contact-icon">
+                <p><a href="www.linkedin.com">Linkedin profile</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2023 Angadjeet Singh. All Rights Reserved</p>
+    </footer>
+    <script src="script.js"></script>
+    <!-- Rest of your sections and scripts -->
+    
+    </body>
+    </html>
+    
